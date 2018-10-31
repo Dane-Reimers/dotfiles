@@ -61,3 +61,8 @@ let g:syntastic_check_on_wq = 0
 " Set color scheme
 colorscheme spacegray
 let g:spacegray_use_italics = 1
+
+set shiftwidth=3
+set autoindent
+set smartindent
+set tabstop=3
