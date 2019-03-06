@@ -18,6 +18,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'valloric/youcompleteme'
 Plugin 'ajh17/Spacegray.vim'
+Plugin 'tomlion/vim-solidity'
+Plugin 'terryma/vim-multiple-cursors'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -66,3 +68,5 @@ set shiftwidth=3
 set autoindent
 set smartindent
 set tabstop=3
+
+set number

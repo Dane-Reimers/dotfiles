@@ -88,4 +88,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export CLASSPATH="$CLASSPATH:/usr/share/maven-repo/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/usr/share/maven-repo/junit/junit/4.12/junit-4.12.jar"
+export NODE_PATH=~/.npm:$NODE_PATH
+export CLASSPATH="$CLASSPATH:/~/.npm:/usr/share/maven-repo/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/usr/share/maven-repo/junit/junit/4.12/junit-4.12.jar"
