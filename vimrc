@@ -19,7 +19,6 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'valloric/youcompleteme'
 Plugin 'ajh17/Spacegray.vim'
 Plugin 'tomlion/vim-solidity'
-Plugin 'terryma/vim-multiple-cursors'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -48,7 +47,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-autocmd vimenter * NERDTree " Autostart NERDTree
+" autocmd vimenter * NERDTree " Autostart NERDTree
 
 " Syntastic settings
 set statusline+=%#warningmsg#
@@ -64,9 +63,20 @@ let g:syntastic_check_on_wq = 0
 colorscheme spacegray
 let g:spacegray_use_italics = 1
 
+syntax on
 set shiftwidth=3
 set autoindent
 set smartindent
 set tabstop=3
+set expandtab
+set nowrap
 
 set number
+
+let g:ycm_python_interpreter_path = ''
+let g:ycm_python_sys_path = []
+let g:ycm_extra_conf_vim_data = [
+  \  'g:ycm_python_interpreter_path',
+  \  'g:ycm_python_sys_path'
+  \]
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/youcompleteme/.ycm_extra_conf.py'
